@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The News</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38ddc46d45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="logo.png" alt="channel name">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')" >Politics</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItemClick('business')" >Business</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')" >Technology</li>
+                    <a href="https://weather.com/en-IN/weather/today/l/23.22,77.40?par=google" class="hover-link nav-item" >Weather&nbsp;&nbsp;<i class="fa-solid fa-sun"></i></a>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div> 
+        
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">end gadget 26/02/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet culpa doloremque numquam veniam similique dolore? Est, reprehenderit, 
+                    aliquid saepe illum laborum quis alias quasi mollitia veniam, cum eaque delectus.</p>
+            </div>
+        </div>
+    </template>
+    <footer>
+        <div class="copyright">
+            <p class="footer">Copyright © Manyam's News Channel</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
